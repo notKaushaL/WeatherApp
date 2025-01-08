@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { useState } from 'react';
 
 export default function Weather() {
@@ -19,12 +18,9 @@ export default function Weather() {
     }
   };
 
-  useEffect(() => {
-    console.log('hii');
-  }, [searchTerm]);
 
   return (
-    <div className="min-h-screen bg-[url('bgimg.jpg')] bg-cover bg-bottom flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen bg-[url('/bgimg.jpg')] bg-cover bg-bottom flex flex-col items-center justify-center p-4">
       <div className="m-10 border border-gray-300 rounded-lg p-8 bg-white bg-opacity-30">
         <h1 className="text-5xl font-bold text-yellow-400 mb-8 text-opacity-90">Weather App</h1>
         <div className="bg-white rounded-lg shadow-lg p-6 w-auto max-w-md bg-opacity-30">
